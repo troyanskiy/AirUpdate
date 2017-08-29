@@ -1,3 +1,7 @@
+|`cordova-air-update-server`|`cordova-air-update-cli`|`cordova-plugin-air-update`|
+|---|---|---|
+|[![npm version](https://badge.fury.io/js/cordova-air-update-server.svg)](https://badge.fury.io/js/cordova-air-update-server)|[![npm version](https://badge.fury.io/js/cordova-air-update-cli.svg)](https://badge.fury.io/js/cordova-air-update-cli)|[![npm version](https://badge.fury.io/js/cordova-plugin-air-update.svg)](https://badge.fury.io/js/cordova-plugin-air-update)|
+
 ## What is AirUpdate?
 
 That set of `air update` parts will provide you a possibility to build your own app publisher/deployer
@@ -25,4 +29,46 @@ Cordova: `cordova plugin add cordova-plugin-air-update --save`
 
 Ionic: `ionic cordova plugin add cordova-plugin-air-update`
 
-Plugin used to replace original `index.html` with updated one during app start (before original page is displayed).
+Plugin used to replace original `index.html` with updated one during app start (before original page is displayed). See the details below.
+
+
+## Installation of all set
+
+### Server side
+I think it's better to start with server side (I did not test that with Windows).
+
+I consider that you alredy have installed `node.js` and `MongoDB`.
+
+The server need's 3 folders
+- applications repository folder to keep app files (html, js....) `pathApps`
+- tmp folder to keep temporary uploads `pathTemp`
+- cache folder to keep prepared zip archives for clients `pathCache`
+
+So, installation and start by steps:
+1. install `npm i -g cordova-air-update-server`
+2. create your config json file (see an example below)
+3. start `cau-server -o <path to your config file>`
+
+Pretty simple, no?
+
+#### Server config example (full)
+``` js
+{
+  "apiServer": {
+    "port": 3000, // default server port
+    "apiPathPrefix": "/api" // default api prefix
+  }
+  "mongo": {
+    "server": "mongodb://user:password@address:port/dbName", // mongoDB connection path
+    "options": {
+      "server": {
+        "reconnectTries": 999999999999
+      }
+    }
+  },
+  "pathApps": "/home/airUpdate/apps",
+  "pathTemp": "/home/airUpdate/uploads",
+  "pathCache": "/home/airUpdate/cache"
+}
+
+```
