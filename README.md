@@ -9,6 +9,11 @@
 That set of `air update` parts will provide you a possibility to build your own app publisher/deployer
 on you private invirement for free. The functionality is similar to Ionic Deploy / Microsoft Code Push which let you publish web assets such as HTML, JS, and CSS directly to your users without going through the app store.
 
+## Booom!
+- CLI pushes only delta's to the server.
+- Server pushes only delta's to the app.
+So there is no big updates with all havy assets.
+
 ## Set contains
 
 ### Server side `cordova-air-update-server`
@@ -84,6 +89,7 @@ Pretty simple, no?
 So, the installation is also pretty simple, just run `npm i -g cordova-air-update-cli`.
 
 ### commands
+The commands shuld be executed in the cordova project folder (where you have your www, platforms, etc... folders)
 * `cau init` - config initialization
 * `cau login` - login with AirUpdate server
 * `cau logout` - logout...
