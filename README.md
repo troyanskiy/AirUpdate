@@ -1,8 +1,7 @@
-## Welcome to GitHub Pages
+## What is AirUpdate
 
-You can use the [editor on GitHub](https://github.com/troyanskiy/cordova-air-update/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+That set of `air update` parts will provide you a possibility to build your own app publisher/deployer
+on you private invirement for free. The functionality is similar to Ionic Deploy / Microsoft Code Push.
 
 ### Markdown
 
