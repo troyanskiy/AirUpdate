@@ -12,7 +12,8 @@ on you private invirement for free. The functionality is similar to Ionic Deploy
 ## Booom!
 - CLI pushes only delta's to the server.
 - Server pushes only delta's to the app.
-So there is no big updates with all havy assets.
+
+So there is no big updates with all havy assets, just only the deltas travaling to/from server.
 
 ## Set contains
 
