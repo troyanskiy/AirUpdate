@@ -127,10 +127,10 @@ Returns: `Promise<void>`
 `AirUpdate.getAllLocalVersions()`<br>
 Returns: `Promise<string[]>` list of all available on the device versions for the active channel
 
-`AirUpdate.deleteLocalVersions(verions: string[])` *Not Implemented yet* Will delete meta info and related files from the device.
+`AirUpdate.deleteLocalVersions(verions: string[])` *Not Implemented yet* Will delete meta info and related files from the device.<br>
 Returns: `Promise<void>`
 
-`AirUpdate.reload()` Reaload the app with new update. (without exiting the app)
+`AirUpdate.reload()` Reaload the app with new update. (without exiting the app)<br>
 Returns: `Promise<void>`
 
 `AirUpdate.clearWWWs()` removed unised app instances (does not removes apps versions). It's kind of clearing useless data.
