@@ -140,3 +140,10 @@ Returns: `Promise<void>`
 * cordova-plugin-advanced-http
 * cordova-plugin-zip
 
+#### IMeta
+```js
+{
+  version: string; // version number
+  filesMap: {[prop: string]: string} // it's map of all files used on the version and there's crc (md5)
+}
+```
