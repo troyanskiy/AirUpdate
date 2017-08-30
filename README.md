@@ -147,3 +147,11 @@ Returns: `Promise<void>`
   filesMap: {[prop: string]: string} // it's map of all files used on the version and there's crc (md5)
 }
 ```
+
+## TODO
+### Common
+* Delta's from server to client
+* Add extra meta data (custom) to the release (deploy)
+* Revoke specific version
+* Push notifications to device about new version
+* Standalone server with https
