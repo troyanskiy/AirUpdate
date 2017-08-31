@@ -153,5 +153,4 @@ Returns: `Promise<void>`
 * Delta's from server to client
 * Add extra meta data (custom) to the release (deploy)
 * Revoke specific version
-* Push notifications to device about new version
 * Standalone server with https
