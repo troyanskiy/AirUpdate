@@ -100,6 +100,17 @@ The commands shuld be executed in the cordova project folder (where you have you
 * `cau deploy <platform> <channelKey>` - deploy the app version to the channel. If channel is not provided, 
 then default one will be used
 
+Extra (custom) data to version release can be added by adding keys with prefix `--extra.` to deploy command.<br>
+Example:<br>
+To receive on app `extras` data json like
+``` json
+{
+  "canNotSkipVersion": true,
+  "message": "That hot release fixes some security issues"
+}
+```
+Run command `cau deploy <platform> <channelKey> --extra.canNotSkipVersion=true --extra.message="That hot release fixes some security issues"`
+
 ### AirUpdate Cordova Plugin
 
 The native part of the plugin is used only to check if there is installed newer version on the app on the 
