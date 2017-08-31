@@ -151,6 +151,6 @@ Returns: `Promise<void>`
 ## TODO
 ### Common
 * Delta's from server to client
-* Add extra meta data (custom) to the release (deploy)
+* ~~Add extra meta data (custom) to the release (deploy)~~
 * Revoke specific version
 * Standalone server with https
