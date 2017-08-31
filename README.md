@@ -145,6 +145,7 @@ Returns: `Promise<void>`
 {
   version: string; // version number
   filesMap: {[prop: string]: string} // it's map of all files used on the version and there's crc (md5)
+  extras: any;
 }
 ```
 
