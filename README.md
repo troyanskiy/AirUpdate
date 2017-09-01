@@ -166,3 +166,6 @@ Returns: `Promise<void>`
 * ~~Add extra meta data (custom) to the release (deploy)~~
 * Revoke specific version
 * Standalone server with https
+
+## Buy me a Coffee with [PayPal.Me](https://www.paypal.me/troyanskiy)
+
